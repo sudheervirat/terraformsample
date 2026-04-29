@@ -1,10 +1,162 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Event Schema Documentation</title>
+
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      background-color: #f7f9fc;
+      color: #333;
+    }
+
+    header {
+      background-color: #1f2937;
+      color: #ffffff;
+      padding: 20px 40px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    main {
+      padding: 40px;
+    }
+
+    .section {
+      background-color: #ffffff;
+      border-radius: 8px;
+      padding: 20px 30px;
+      margin-bottom: 30px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+
+    .section h2 {
+      margin-top: 0;
+      color: #1f2937;
+    }
+
+    .api-item {
+      background-color: #f1f5ff;
+      border-left: 4px solid #2563eb;
+      border-radius: 4px;
+      padding: 12px 16px;
+      margin-bottom: 15px;
+    }
+
+    .api-title {
+      font-weight: bold;
+      margin-bottom: 6px;
+      color: #1d4ed8;
+    }
+
+    .api-links a {
+      margin-right: 15px;
+      font-size: 14px;
+      text-decoration: none;
+      color: #2563eb;
+    }
+
+    .api-links a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 13px;
+      color: #6b7280;
+    }
+  </style>
+</head>
+
 <body>
 
-<h1>My First Heading</h1>
+<header>
+  <h1>Event Schema Documentation</h1>
+</header>
 
-<p>My first paragraph.</p>
+<main>
+
+  <!-- ================= ORDER ================= -->
+  <div class="section">
+    <h2>Order</h2>
+
+    <div class="api-item">
+      <div class="api-title">INTG001 Request</div>
+      <div class="api-links">
+        <a href="html/INTG001_req.html" target="_blank">Schema Docs</a>
+        <a href="avro/INTG001_req.avsc" target="_blank">Avro Schema</a>
+        <a href="json/INTG001_req.json" target="_blank">Sample JSON</a>
+      </div>
+    </div>
+
+    <div class="api-item">
+      <div class="api-title">INTG001 Response</div>
+      <div class="api-links">
+        <a href="order/OrderCancelled.html" target="_blank">Schema Docs</a>
+        <a href="order/OrderCancelled.avsc" target="_blank">Avro Schema</a>
+        <a href="order/OrderCancelled-sample.json" target="_blank">Sample JSON</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= FULFILLMENT ================= -->
+  <div class="section">
+    <h2>Fulfillment</h2>
+
+    <div class="api-item">
+      <div class="api-title">Fulfillment Created</div>
+      <div class="api-links">
+        <a href="fulfillment/FulfillmentCreated.html" target="_blank">Schema Docs</a>
+        <a href="fulfillment/FulfillmentCreated.avsc" target="_blank">Avro Schema</a>
+        <a href="fulfillment/FulfillmentCreated-sample.json" target="_blank">Sample JSON</a>
+      </div>
+    </div>
+
+    <div class="api-item">
+      <div class="api-title">Fulfillment Shipped</div>
+      <div class="api-links">
+        <a href="fulfillment/FulfillmentShipped.html" target="_blank">Schema Docs</a>
+        <a href="fulfillment/FulfillmentShipped.avsc" target="_blank">Avro Schema</a>
+        <a href="fulfillment/FulfillmentShipped-sample.json" target="_blank">Sample JSON</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= TESTING ================= -->
+  <div class="section">
+    <h2>Testing</h2>
+
+    <div class="api-item">
+      <div class="api-title">Test Order Event</div>
+      <div class="api-links">
+        <a href="testing/TestOrderEvent.html" target="_blank">Schema Docs</a>
+        <a href="testing/TestOrderEvent.avsc" target="_blank">Avro Schema</a>
+        <a href="testing/TestOrderEvent-sample.json" target="_blank">Sample JSON</a>
+      </div>
+    </div>
+
+    <div class="api-item">
+      <div class="api-title">Test Payment Event</div>
+      <div class="api-links">
+        <a href="testing/TestPaymentEvent.html" target="_blank">Schema Docs</a>
+        <a href="testing/TestPaymentEvent.avsc" target="_blank">Avro Schema</a>
+        <a href="testing/TestPaymentEvent-sample.json" target="_blank">Sample JSON</a>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<footer>
+  © 2026 Event Schema Documentation
+</footer>
 
 </body>
 </html>
+``
